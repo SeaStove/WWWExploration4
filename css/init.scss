@@ -1,0 +1,45 @@
+﻿@import "colors.scss";
+
+$color: #808080;
+$divColor: #4cff00;
+
+@function necessaryDarkness($color){
+    @return (darker($color,30%);
+}
+
+@for $colNumber from 2 through 5 {
+    .col-#{$colNumber} {
+        width: 900px / $colNumber - 10px;
+    }
+}
+
+
+body {
+    background-color: $color;
+
+    .form {
+        background-color: necessaryDarkness($color);
+        input {
+        background-color: darker($mainColor,70%);
+        }
+    }
+
+    button {
+        @include font-large;
+        zoom: 3;
+        background-color: $divColor;
+        color: lighter($color,70%)
+    }
+
+    h1 {
+        @extend button;
+    }
+
+}
+@mixin font-large {
+        font: {
+            size: 14px;
+        }
+    }
+
+

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Cool Form</title>
+    <link rel="StyleSheet"
+          href="css/init.css"
+          type="text/css"/>
+    <link rel="StyleSheet"
+          href="css/cool.css"
+          type="text/css"/>
+
+    <script>
+        
+        function judgeCat() {
+            var div = document.getElementById("myDiv");
+            div.innerHTML = "Good cat!";
+        }
+
+
+    </script>
+</head>
+<body>
+<center>
+    <h1>Welcome to the show</h1>
+    <div>
+        <form name="coolform">
+            Cool Cat:<br/>
+            <input type="text" name="cc"/>
+            <br/>
+            Another Cat:<br/>
+            <input type="text" name="ac"/>
+        </form>
+    </div>
+    <br/>
+    <button class="button" onclick="judgeCat()" href="" value="I'll judge your cats'">I'll judge your cats!</button>
+    <br/>
+    <br/>
+    <div id="myDiv"></div>
+</center>
+
+
+</body>
+</html>
